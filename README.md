@@ -37,7 +37,7 @@ Maven Builds
 2. To deploy to a connected device or emulator: `mvn android:deploy`
 3. To run: `mvn android:run`
 
-To build with different Android platform versions, download the [maven-android-sdk-deployer](https://github.com/mosabua/maven-android-sdk-deployer) tool and follow the instructions in the README file.  For example to install Maven libraries for Android-21, run `mvn install -P 5.0` and use the follwing dependency:
+To build with different Android platform versions, download the [maven-android-sdk-deployer](https://github.com/mosabua/maven-android-sdk-deployer) tool and follow the instructions in the README file.  For example, to install Maven libraries for Android-21, run `mvn install -P 5.0` and use the following dependency:
 ```
 <dependency>
   <groupId>android</groupId>
