@@ -31,10 +31,20 @@ The following JAR files need to be added to the project:
 * [google-http-client-gson-1.19.0.jar](http://search.maven.org/remotecontent?filepath=com/google/http-client/google-http-client-gson/1.19.0/google-http-client-gson-1.19.0.jar)
 * [gson-2.3.jar](http://search.maven.org/remotecontent?filepath=com/google/code/gson/gson/2.3/gson-2.3.jar)
  
-Maven Nuilds
+Maven Builds
 ------------
 1. To build: `mvn clean install`
 2. To deploy to a connected device or emulator: `mvn android:deploy`
 3. To run: `mvn android:run`
+
+To build with different Android platform versions, download the [maven-android-sdk-deployer](https://github.com/mosabua/maven-android-sdk-deployer) tool and follow the instructions in the README file.  For example to install Maven libraries for Android-21, run `mvn install -P 5.0` and use the follwing dependency:
+```
+<dependency>
+  <groupId>android</groupId>
+  <artifactId>android</artifactId>
+  <version>5.0_r1</version>
+  <scope>provided</scope>
+</dependency>
+```
 
 
