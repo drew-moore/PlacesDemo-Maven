@@ -3,6 +3,7 @@ PlacesDemo-Maven
 
 Android demo with Google Geocoding, Elevation and Civic Information API: for Maven and ant (Eclipse ADT) builds.
 The same source code project can be used for both project types
+
 1. Import -> Existing Android code into workspace
 2. Properties -> Android -> Android 5.0 (API level 21)
 3. Build Path -> Configure Build Path -> Libraries -> Add External JARs
