@@ -4,11 +4,18 @@ PlacesDemo-Maven
 Android demo with Google Geocoding, Elevation and Civic Information API: for Maven and ant (Eclipse ADT) builds.
 The same source code project can be used for both project types
 
-You will need a Google API key to access the [Geocoding API](https://developers.google.com/maps/documentation/geocoding/), [Elevation API](https://developers.google.com/maps/documentation/elevation/) and [Google Civic Information API](https://developers.google.com/civic-information/): these services have courtesy limits, which allow limited use free of charge. Use the [Google API Console](https://code.google.com/apis/console) to create a Google API project, add the required services (APIs & Auth -> API) and then create an API Key (APIs & Auth -> Credentials). 
+Using Google APIs
+-----------------
+You will need a Google API key to access the [Geocoding API](https://developers.google.com/maps/documentation/geocoding/), [Elevation API](https://developers.google.com/maps/documentation/elevation/) and [Google Civic Information API](https://developers.google.com/civic-information/): these services have courtesy limits, which allow limited use free of charge. Use the [Google API Console](https://code.google.com/apis/console) to create a Google API project, add the required services (APIs & Auth -> API) and then create an API Key (APIs & Auth -> Credentials). Create a Browser key and leaved the Allowed Referers field blank.
 
-Create an API key for Android applications, using the SHA1 certificate fingerprint from your default keystore followed by the following package name `;com.example.appdynamics.placesdemo`. To find the SHA1 certificate fingerprint use the following:
+Create the following class file (GooglePlacesKey.java) in src/com/example/appdynamicsplacesdemo adn copy your API key:
+```
+package com.example.appdynamics.placesdemo;
 
-`keytool -list -v -keystore ~/.android/debug.keystore -storepass android`
+public class GooglePlacesKey {
+    public static final String API_KEY = "<your API key>";
+}
+```
 
 Eclipse ADT Builds
 ------------------
