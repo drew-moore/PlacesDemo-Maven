@@ -4,12 +4,14 @@ PlacesDemo-Maven
 Android demo with Google Geocoding, Elevation and Civic Information API: for Maven and ant (Eclipse ADT) builds.
 The same source code project can be used for both project types
 
-You will need a Google API key to access the [Geocoding API](https://developers.google.com/maps/documentation/geocoding/), [Elevation API](https://developers.google.com/maps/documentation/elevation/) and [Civic Information API](https://developers.google.com/civic-information/): these services have courtesy limits, which allow limited use free of charge. Use the [Google API Console](https://code.google.com/apis/console) to create a Google API project, add the required services (APIs & Auth -> API) and then create an API Key (APIs & Auth -> Credentials). 
+You will need a Google API key to access the [Geocoding API](https://developers.google.com/maps/documentation/geocoding/), [Elevation API](https://developers.google.com/maps/documentation/elevation/) and [Google Civic Information API](https://developers.google.com/civic-information/): these services have courtesy limits, which allow limited use free of charge. Use the [Google API Console](https://code.google.com/apis/console) to create a Google API project, add the required services (APIs & Auth -> API) and then create an API Key (APIs & Auth -> Credentials). 
 
 Create an API key for Android applications, using the SHA1 certificate fingerprint from your default keystore followed by the following package name `;com.example.appdynamics.placesdemo`. To find the SHA1 certificate fingerprint use the following:
 
 `keytool -list -v -keystore ~/.android/debug.keystore -storepass android`
 
+Eclipse ADT Builds
+------------------
 1.  Import -> Existing Android code into workspace
 2.  Properties -> Android -> Android 5.0 (API Level 21)
 3.  Build Path -> Configure Build Path -> Libraries -> Add External JARs
