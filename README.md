@@ -7,6 +7,9 @@ The same source code project can be used for both project types
 1.  Import -> Existing Android code into workspace
 2.  Properties -> Android -> Android 5.0 (API Level 21)
 3.  Build Path -> Configure Build Path -> Libraries -> Add External JARs
+4.  Clean and rebuild the project
+
+The following JAR files need to be added to the project:
 
 * [google-api-client-1.19.0.jar](http://search.maven.org/remotecontent?filepath=com/google/api-client/google-api-client/1.19.0/google-api-client-1.19.0.jar)
 * [google-api-services-civicinfo-v2-rev7-1.19.0.jar](http://search.maven.org/remotecontent?filepath=com/google/apis/google-api-services-civicinfo/v2-rev7-1.19.0/google-api-services-civicinfo-v2-rev7-1.19.0.jar)
