@@ -1,7 +1,6 @@
 Overview
 --------
-Android demo with Google Geocoding, Elevation and Civic Information API: for Maven and ant (Eclipse ADT) builds.
-The same source code project can be used for both project types. This project builds a simple Android application that gives geocoding and elevation data, plus a complete list of elected officials (in the US at least), for a given address string.
+Android demo using the Google Geocoding, Elevation and Civic Information APIs: the project builds a simple Android application that gives geocoding and elevation data, plus a complete list of elected officials (in the US at least), for a given address string. The same source code project can be used to build Maven and ant (Eclipse ADT) builds.  
 
 Using Google APIs
 -----------------
