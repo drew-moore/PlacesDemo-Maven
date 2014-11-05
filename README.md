@@ -30,3 +30,11 @@ The following JAR files need to be added to the project:
 * [google-http-client-android-1.19.0.jar](http://search.maven.org/remotecontent?filepath=com/google/http-client/google-http-client-android/1.19.0/google-http-client-android-1.19.0.jar)
 * [google-http-client-gson-1.19.0.jar](http://search.maven.org/remotecontent?filepath=com/google/http-client/google-http-client-gson/1.19.0/google-http-client-gson-1.19.0.jar)
 * [gson-2.3.jar](http://search.maven.org/remotecontent?filepath=com/google/code/gson/gson/2.3/gson-2.3.jar)
+ 
+Maven Nuilds
+------------
+1. To build: `mvn clean install`
+2. To deploy to a connected device or emulator: `mvn android:deploy`
+3. To run: `mvn android:run`
+
+
